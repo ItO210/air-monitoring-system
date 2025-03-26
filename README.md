@@ -76,7 +76,7 @@ Before uploading the firmware, you need to assemble the ESP32 with its sensors.
 
   - Ensure proper power supply and secure connections.
 
-6. Configure & Upload the ESP32 Firmware
+5. Configure & Upload the ESP32 Firmware
 
 - Navigate to the esp32 folder.
 - Open arduino.ino in the Arduino IDE.
