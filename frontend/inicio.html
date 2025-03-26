@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aire Sano</title>
+    <link
+      rel="icon"
+      href="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+      type="image/icono"
+    />
+    <link rel="stylesheet" href="./css/inicio.css" />
+    <script type="application/javascript" src="js/usuario_iniciado.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="inicio.html#seccion-inicio">
+        <img
+          class="menu-logo-aire-sano"
+          src="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+          title="Inicio"
+        />
+      </a>
+      <img
+        class="menu-icono-menu"
+        src="img/menu-icono.svg"
+        id="boton-menu-desplegable"
+        title="Menú"
+        onclick="toggleMenu()"
+      />
+    </div>
+
+    <div id="menu">
+      <img class="cerrar-menu" src="img/cerrar.png" onclick="toggleMenu()" />
+      <a
+        class="menu-opciones-inicio"
+        href="inicio.html#seccion-inicio"
+        onclick="toggleMenu()"
+        >INICIO</a
+      >
+      <a
+        class="menu-opciones-inicio-sesion"
+        href="inicio_sesion.html"
+        onclick="tooggleMenu()"
+        id="iniciar-sesion-opcion-menu"
+        >INICIAR DE SESIÓN</a
+      >
+      <a
+        class="menu-opciones-como-funciona"
+        href="como_funciona.html"
+        onclick="toggleMenu()"
+        >¿CÓMO FUNCIONA?</a
+      >
+      <a
+        class="menu-opciones-sobre-nosotros"
+        href="inicio.html#seccion-sobre-nosotros"
+        onclick="toggleMenu()"
+        >SOBRE NOSOTROS</a
+      >
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+
+    <div class="inicio" id="seccion-inicio">
+      <img class="cuerpo-pagina-inicio-imagen1" src="img/inicio.png" />
+      <h1 class="cuerpo-pagina-inicio-titulo">AIRE SANO</h1>
+    </div>
+
+    <div class="sobre-nosotros" id="seccion-sobre-nosotros">
+      <div class="grupo-1">
+        <img class="sobre-nosotros-img1" src="img/imagen1_sobre_nosotros.png" />
+        <p class="rectangulo-texto">
+          La falta de monitoreo de la calidad de aire dentro de hogares y
+          oficinas resulta en un alto riesgo para nuestra salud respiratoria.
+          Podemos estar expuestos a altas concentraciones de contaminación o
+          gases tóxicos y no notarlo. Tras esta preocupación surge aire sano.
+        </p>
+        <div class="rectangulo"></div>
+      </div>
+
+      <div class="grupo-2">
+        <p>
+          Aire sano es una aplicación basada en IoT que se encarga del monitoreo
+          de la calidad de aire de tu hogar u oficina.<br /><br />Dentro de esta
+          app podrás ver la calidad de aire ante la prescencia de contaminación,
+          gases tóxicos, humo, humedad y altas temperaturas<br /><br />Aire sano
+          se preocupa por tu salud.<br /><br />Si tienes alguna duda,
+          recomendación o queja, contáctanos<br /><br />airesano.inc@gmail.com
+        </p>
+        <img class="sobre-nosotros-img2" src="img/imagen2_sobre_nosotros.png" />
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <footer>
+        <a href="mailto:airesano.inc@gmail.com">
+          <img
+            class="icono-mail"
+            src="img/icono-mail2.svg"
+            title="Enviar correo electronico"
+          />
+        </a>
+      </footer>
+    </div>
+    <!--
+
+  --></body>
+</html>

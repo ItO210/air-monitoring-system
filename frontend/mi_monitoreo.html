@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aire Sano</title>
+    <link
+      rel="icon"
+      href="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+      type="image/icono"
+    />
+    <link rel="stylesheet" href="./css/mi_monitoreo.css" />
+    <script type="application/javascript" src="js/mi_monitoreo.js"></script>
+    <script type="application/javascript" src="js/usuario_iniciado.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="inicio.html#seccion-inicio">
+        <img
+          class="menu-logo-aire-sano"
+          src="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+          title="Inicio"
+        />
+      </a>
+      <img
+        class="menu-icono-menu"
+        src="img/menu-icono.svg"
+        id="boton-menu-desplegable"
+        title="Menú"
+        onclick="toggleMenu()"
+      />
+    </div>
+
+    <div id="menu">
+      <img class="cerrar-menu" src="img/cerrar.png" onclick="toggleMenu()" />
+      <a
+        class="menu-opciones-inicio"
+        href="inicio.html#seccion-inicio"
+        onclick="toggleMenu()"
+        >INICIO</a
+      >
+      <a
+        class="menu-opciones-inicio-sesion"
+        href="inicio_sesion.html"
+        onclick="tooggleMenu()"
+        id="iniciar-sesion-opcion-menu"
+        >INICIAR DE SESIÓN</a
+      >
+      <a
+        class="menu-opciones-como-funciona"
+        href="como_funciona.html"
+        onclick="toggleMenu()"
+        >¿CÓMO FUNCIONA?</a
+      >
+      <a
+        class="menu-opciones-sobre-nosotros"
+        href="inicio.html#seccion-sobre-nosotros"
+        onclick="toggleMenu()"
+        >SOBRE NOSOTROS</a
+      >
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+
+    <div class="monitoreo-graficas-contenedor">
+      <div class="graficas-grupo1">
+        <div>
+          <iframe
+            class="gauge"
+            src="http://localhost:3000/d-solo/pwXwvrAVk/new-dashboard?orgId=1&from=1675866408000&to=1675866409000&theme=light&panelId=2"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            class="tabla"
+            src="http://localhost:3000/d-solo/pwXwvrAVk/new-dashboard?orgId=1&from=1675866408000&to=1675866409000&theme=light&panelId=3"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <div class="graficas-grupo2">
+        <div>
+          <iframe
+            class="barras-calidad-aire"
+            src="http://localhost:3000/d-solo/pwXwvrAVk/new-dashboard?orgId=1&from=1700549405128&to=1700549705128&theme=light&panelId=4"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            class="barras-humedad"
+            src="http://localhost:3000/d-solo/pwXwvrAVk/new-dashboard?orgId=1&from=1700549740494&to=1700550040494&showCategory=Override+2&theme=light&panelId=5"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            class="barras-temperatura"
+            src="http://localhost:3000/d-solo/pwXwvrAVk/new-dashboard?orgId=1&from=1700362560000&to=1700448862000&showCategory=Data+links&theme=light&panelId=6"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <footer>
+        <a href="mailto:airesano.inc@gmail.com">
+          <img
+            class="icono-mail"
+            src="img/icono-mail2.svg"
+            title="Enviar correo electronico"
+          />
+        </a>
+        <a id="salir-sesion" class="cerrar-sesion" href="inicio.html"
+          >Cerrar sesión</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>

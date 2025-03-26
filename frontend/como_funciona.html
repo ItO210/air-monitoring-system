@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aire Sano</title>
+    <link
+      rel="icon"
+      href="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+      type="image/icono"
+    />
+    <link rel="stylesheet" href="./css/como_funciona.css" />
+    <script type="application/javascript" src="js/usuario_iniciado.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="inicio.html#seccion-inicio">
+        <img
+          class="menu-logo-aire-sano"
+          src="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+        />
+      </a>
+      <img
+        class="menu-icono-menu"
+        src="img/menu-icono.svg"
+        id="boton-menu-desplegable"
+        title="Menú"
+        onclick="toggleMenu()"
+      />
+    </div>
+
+    <div id="menu">
+      <img class="cerrar-menu" src="img/cerrar.png" onclick="toggleMenu()" />
+      <a
+        class="menu-opciones-inicio"
+        href="inicio.html#seccion-inicio"
+        onclick="toggleMenu()"
+        >INICIO</a
+      >
+      <a
+        class="menu-opciones-inicio-sesion"
+        href="inicio_sesion.html"
+        onclick="tooggleMenu()"
+        id="iniciar-sesion-opcion-menu"
+        >INICIAR DE SESIÓN</a
+      >
+      <a
+        class="menu-opciones-como-funciona"
+        href="como_funciona.html"
+        onclick="toggleMenu()"
+        >¿CÓMO FUNCIONA?</a
+      >
+      <a
+        class="menu-opciones-sobre-nosotros"
+        href="inicio.html#seccion-sobre-nosotros"
+        onclick="toggleMenu()"
+        >SOBRE NOSOTROS</a
+      >
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+
+    <div class="fondo">
+      <img class="fondo-imagen" src="img/como_funciona_img.jpeg" />
+    </div>
+    <div class="como-funciona-contenedor">
+      <h1 class="como-funciona-titulo">¿CÓMO FUNCIONA?</h1>
+      <p class="como-funciona-cuerpo">
+        La aplicación Aire Sano, respaldada por la tecnología de Internet de las
+        cosas (IoT), utiliza sensores avanzados como el DHT11 para medir la
+        temperatura y humedad, y el MQ135 para detectar niveles de gases,
+        ofreciendo una visión integral de la calidad del aire en tiempo real en
+        entornos residenciales y laborales. La monitorización proactiva es
+        esencial para la preservación de la salud y el confort. El sensor DHT11
+        previene problemas de confort y riesgos de moho al rastrear temperatura
+        y humedad, mientras que el sensor MQ135 detecta gases nocivos, alertando
+        a los usuarios sobre posibles amenazas para la salud. <br /><br />
+        La implementación de la IoT facilita la recopilación continua de datos,
+        alertas en tiempo real, ajuste automático de sistemas de ventilación y
+        generación de informes detallados. En resumen, Aire Sano es una
+        herramienta crucial para garantizar un entorno interior saludable y
+        confortable, respaldando el bienestar de sus usuarios.
+      </p>
+      <img class="como-funciona-imagen" src="img/dashboard.png" />
+      <p class="como-funciona-cuerpo">
+        Tras iniciar sesión tendras acceso tu tablero con 5 gráficas que te
+        proporcionará información sobre el monitoreo de tu hogar u oficina.
+        <br /><br />
+        La primera gráfica de tipo gauge te mostrará el último valor registrado
+        de los sensores de calidad de aire, humedad y temperatura.
+        <br /><br />
+        La segunda gráfica de tipo tabla te mostrará un historial de los valores
+        registrados.
+        <br /><br />
+        Las ultimas tres gráficas de tipo barras te mostraran un historial de
+        los valores registrados de los sensores de calidad de aire, humedad y
+        temperatura.
+        <br /><br />
+        Si las gráficas de gauge toman colores fríos, significa que los valores
+        registrados son bajos o intermedios y por lo tanto no representan un
+        riesgo para la salud. Si las gráficas de gauge toman colores rojos,
+        significa que los valores registrados son altos y por lo tanto no son
+        saludables. Todas las estadísticas se actualizan cada 30 segundos.
+        <br /><br />
+      </p>
+      <br />
+    </div>
+
+    <div class="footer-container">
+      <footer>
+        <a href="mailto:airesano.inc@gmail.com">
+          <img
+            class="icono-mail"
+            src="img/icono-mail2.svg"
+            title="Enviar correo electronico"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

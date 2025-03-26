@@ -1,0 +1,18 @@
+<svg width="140" height="115" viewBox="0 0 140 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#240;&#159;&#166;&#134; icon &#34;mail&#34;" filter="url(#filter0_d_35_32)">
+<path id="Vector" d="M45.9998 40.3069L64.9998 52.8254L83.9998 40.3069" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M27 68.9206V33.1534C27 29.2027 30.4026 26 34.6 26H95.4C99.5975 26 103 29.2027 103 33.1534V68.9206C103 72.8714 99.5975 76.074 95.4 76.074H34.6C30.4026 76.074 27 72.8714 27 68.9206Z" stroke="white" stroke-width="4"/>
+</g>
+<defs>
+<filter id="filter0_d_35_32" x="0" y="0" width="140" height="114.074" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="5" dy="6"/>
+<feGaussianBlur stdDeviation="15"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.996934 0 0 0 0 0.996934 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_32"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_32" result="shape"/>
+</filter>
+</defs>
+</svg>

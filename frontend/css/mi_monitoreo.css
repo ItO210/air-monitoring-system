@@ -1,0 +1,223 @@
+body {
+    background-color: rgb(119, 133, 140);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+}
+
+
+
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    height: 150px;
+    background: linear-gradient(180deg, rgb(5, 19, 27) 3.13%, rgba(69.92, 76.07, 79.53, 0) 100%);
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+
+}
+.menu .menu-logo-aire-sano{
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.menu .menu-icono-menu{
+
+    display: block;
+    position: absolute;
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    right: 0%;
+    cursor: pointer;
+}
+
+.monitoreo-graficas-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.monitoreo-graficas-contenedor > iframe {
+    margin: 0 auto;
+}
+
+.graficas-grupo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: space-between; /* Distribuye verticalmente con espacio entre los elementos */
+    height: 620px; /* Ajusta la altura al 100% de la ventana */
+    padding: 10px;
+}
+
+.graficas-grupo2{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: space-between; /* Distribuye verticalmente con espacio entre los elementos */
+    height: 620px; /* Ajusta la altura al 100% de la ventana */
+}
+
+
+.monitoreo-graficas-contenedor .gauge{
+    height: 300px;
+    width: 600px;
+}
+
+.monitoreo-graficas-contenedor .tabla{
+    width: 600px;
+    height: 300px;
+}
+
+.monitoreo-graficas-contenedor .barras-calidad-aire {
+    height: 200px;
+    width: 700px;
+
+}
+
+.monitoreo-graficas-contenedor .barras-humedad {
+    height: 200px;
+    width: 700px;
+}
+
+.monitoreo-graficas-contenedor .barras-temperatura{
+    height: 200px;
+    width: 700px;
+}
+
+@media (max-width: 720px){
+    .monitoreo-graficas-contenedor .gauge{
+        width: 100%;
+    }
+    
+    .monitoreo-graficas-contenedor .tabla{
+        width: 100%;
+    }
+    
+    .monitoreo-graficas-contenedor .barras-calidad-aire {
+        width: 100%;
+    }
+    
+    .monitoreo-graficas-contenedor .barras-humedad {
+        width: 100%;
+    }
+    
+    .monitoreo-graficas-contenedor .barras-temperatura{
+        width: 100%;
+    }
+    
+ }
+
+
+ .footer-container {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    transform: rotate(-180deg);
+    background: linear-gradient(180deg, rgb(7.52, 30.02, 42.68) 3.13%, rgba(69.92, 76.07, 79.53, 0) 100%);
+    bottom: 0;
+}
+.footer-container > footer{
+    padding-left: 2.2vw;
+    padding-bottom: 1.5vw;
+    transform: rotate(-180deg);
+    display: flex;
+    flex-direction: row;
+}
+.correo {
+    width: 40%;
+    font-family: "Lato", Helvetica;
+    color: #ffffff;
+    font-size: 1vw;
+    text-align: justify;
+}
+
+.icono-mail{
+    position: absolute;
+    width: 60px;
+    right: 20px;
+    bottom: 25px;
+} 
+
+
+
+.cerrar-sesion{
+    padding: 8px;
+    color: #fff;   
+    text-decoration: none; 
+    position: absolute;
+    right: 120px;
+    bottom: 35px;
+    cursor: pointer;
+    font-family: "Lato", Helvetica;
+    border: #ffffff solid 1px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.cerrar-sesion:hover{
+    background-color: #ffffff50;
+}
+
+ #menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #ebebeb;
+    padding-top: 60px; /* Ajusta según la altura del encabezado del menú */
+    color: #fff;
+    z-index: 2;
+}
+
+#menu a {
+    font-family: "Jura", Helvetica;
+    font-size: 15px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#menu a:hover{
+    color: #fff;
+    background-color: #68767a;
+}
+
+
+#menuToggle {
+    
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#menu img{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#menuToggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+}

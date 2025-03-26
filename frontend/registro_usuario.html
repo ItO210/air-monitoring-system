@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aire Sano</title>
+    <link
+      rel="icon"
+      href="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+      type="image/icono"
+    />
+    <link rel="stylesheet" href="./css/registro_usuario.css" />
+    <script type="application/javascript" src="js/registro_usuario.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="inicio.html#seccion-inicio">
+        <img
+          class="menu-logo-aire-sano"
+          src="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+          title="Inicio"
+        />
+      </a>
+      <img
+        class="menu-icono-menu"
+        src="img/menu-icono.svg"
+        id="boton-menu-desplegable"
+        title="Menú"
+        onclick="toggleMenu()"
+      />
+    </div>
+
+    <div id="menu">
+      <img class="cerrar-menu" src="img/cerrar.png" onclick="toggleMenu()" />
+      <a
+        class="menu-opciones-inicio"
+        href="inicio.html#seccion-inicio"
+        onclick="toggleMenu()"
+        >INICIO</a
+      >
+      <a
+        class="menu-opciones-inicio-sesion"
+        href="inicio_sesion.html"
+        onclick="toggleMenu()"
+        >INICIO DE SESION</a
+      >
+      <a
+        class="menu-opciones-como-funciona"
+        href="como_funciona.html"
+        onclick="toggleMenu()"
+        >¿CÓMO FUNCIONA?</a
+      >
+      <a
+        class="menu-opciones-sobre-nosotros"
+        href="inicio.html#seccion-sobre-nosotros"
+        onclick="toggleMenu()"
+        >SOBRE NOSOTROS</a
+      >
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+
+    <div class="fondo">
+      <img class="fondo-imagen" src="img/sesion-img.jpeg" />
+    </div>
+
+    <section class="Registro">
+      <p class="registro-titulo">Registro de usuario</p>
+      <div>
+        <input id="user" placeholder="User" pattern="[A-Za-z]+" required />
+      </div>
+      <div>
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          maxlength="56"
+          required
+        />
+      </div>
+      <a href="inicio_sesion.html">¿Ya tienes cuenta? Inicia sesión</a>
+      <div>
+        <input id="registrar" type="submit" class="button" value="Registrar" />
+      </div>
+    </section>
+    <div class="footer-container">
+      <footer>
+        <a href="mailto:airesano.inc@gmail.com">
+          <img
+            class="icono-mail"
+            src="img/icono-mail2.svg"
+            title="Enviar correo electronico"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

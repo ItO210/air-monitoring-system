@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aire Sano</title>
+    <link
+      rel="icon"
+      href="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+      type="image/icono"
+    />
+    <link rel="stylesheet" href="./css/inicio_sesion.css" />
+    <script type="application/javascript" src="js/inicio_sesion.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="inicio.html#seccion-inicio">
+        <img
+          class="menu-logo-aire-sano"
+          src="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+          title="Inicio"
+        />
+      </a>
+      <img
+        class="menu-icono-menu"
+        src="img/menu-icono.svg"
+        id="boton-menu-desplegable"
+        title="Menú"
+        onclick="toggleMenu()"
+      />
+    </div>
+
+    <div id="menu">
+      <img class="cerrar-menu" src="img/cerrar.png" onclick="toggleMenu()" />
+      <a
+        class="menu-opciones-inicio"
+        href="inicio.html#seccion-inicio"
+        onclick="toggleMenu()"
+        >INICIO</a
+      >
+      <a
+        class="menu-opciones-inicio-sesion"
+        href="inicio_sesion.html"
+        onclick="toggleMenu()"
+        id="iniciar-sesion-opcion-menu"
+        >INICIAR DE SESIÓN</a
+      >
+      <script>
+        function cambiarTexto() {
+          var enlace = document.getElementById("iniciar-sesion-opcion-menu");
+          if (localStorage.getItem("usuario_iniciado")) {
+            enlace.textContent = "Mi monitoreo";
+          } else {
+            enlace.textContent = "Iniciar sesión";
+          }
+        }
+      </script>
+      <a
+        class="menu-opciones-como-funciona"
+        href="como_funciona.html"
+        onclick="toggleMenu()"
+        >¿CÓMO FUNCIONA?</a
+      >
+      <a
+        class="menu-opciones-sobre-nosotros"
+        href="inicio.html#seccion-sobre-nosotros"
+        onclick="toggleMenu()"
+        >SOBRE NOSOTROS</a
+      >
+    </div>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+    <div class="fondo">
+      <img class="fondo-imagen" src="img/sesion-img.jpeg" />
+    </div>
+
+    <section class="Registro">
+      <p class="registro-titulo">Iniciar sesión</p>
+      <div><input id="user" placeholder="User" /></div>
+      <div><input id="password" type="password" placeholder="Password" /></div>
+      <a href="registro_usuario.html">¿No tienes cuenta? Registrate</a>
+      <div>
+        <input
+          id="iniciar_sesion"
+          type="button"
+          class="button"
+          value="Iniciar sesion"
+        />
+      </div>
+    </section>
+    <!--
+      
+
+    -->
+    <div class="footer-container">
+      <footer>
+        <a href="mailto:airesano.inc@gmail.com">
+          <img
+            class="icono-mail"
+            src="img/icono-mail2.svg"
+            title="Enviar correo electronico"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

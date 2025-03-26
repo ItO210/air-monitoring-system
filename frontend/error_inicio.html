@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aire Sano</title>
+    <link
+      rel="icon"
+      href="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+      type="image/icono"
+    />
+    <link rel="stylesheet" href="./css/error_inicio.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <a href="inicio.html#seccion-inicio">
+        <img
+          class="menu-logo-aire-sano"
+          src="img/logo-hamburguesas-ilustrada-naranja-2-1.png"
+        />
+      </a>
+      <div class="menu-opciones">
+        <a class="menu-opciones-inicio" href="inicio.html#seccion-inicio"
+          >INICIO</a
+        >
+        <a class="menu-opciones-mi-monitoreo" href="error_inicio.html"
+          >MI MONITOREO</a
+        >
+        <a class="menu-opciones-como-funciona" href="como_funciona.html"
+          >¿CÓMO FUNCIONA?</a
+        >
+        <a
+          class="menu-opciones-sobre-nosotros"
+          href="inicio.html#seccion-sobre-nosotros"
+          >SOBRE NOSOTROS</a
+        >
+      </div>
+      <img
+        class="menu-icono-menu"
+        src="img/icono-menu.png"
+        id="boton-menu-desplegable"
+        onclick="toggleMenu()"
+      />
+      <img class="menu-icono-usuario" src="img/🦆 icon _user_.svg" />
+    </div>
+
+    <div id="menu">
+      <img class="cerrar-menu" src="img/cerrar.png" onclick="toggleMenu()" />
+      <a
+        class="menu-opciones-inicio"
+        href="inicio.html#seccion-inicio"
+        onclick="toggleMenu()"
+        >INICIO</a
+      >
+      <a
+        class="menu-opciones-mi-monitoreo"
+        href="error_inicio.html"
+        onclick="toggleMenu()"
+        >MI MONITOREO</a
+      >
+      <a
+        class="menu-opciones-como-funciona"
+        href="como_funciona.html"
+        onclick="toggleMenu()"
+        >¿CÓMO FUNCIONA?</a
+      >
+      <a
+        class="menu-opciones-sobre-nosotros"
+        href="inicio.html#seccion-sobre-nosotros"
+        onclick="toggleMenu()"
+        >SOBRE NOSOTROS</a
+      >
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+    </script>
+
+    <div class="contenedor">
+      <div class="rectangulo">
+        <p>ERROR<br />NO SE HA INICIADO SESIÓN</p>
+      </div>
+    </div>
+    <div class="fondo">
+      <div class="fondo-rectangulo"></div>
+    </div>
+    <div class="footer-container">
+      <footer>
+        <p class="correo" title="Correo de contacto">Correo_2023@gmail.com</p>
+        <a href="https://www.youtube.com/">
+          <img
+            class="icono-mail"
+            src="img/icono-mail2.svg"
+            title="Enviar correo electronico"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
