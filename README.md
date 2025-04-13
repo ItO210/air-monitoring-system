@@ -11,7 +11,6 @@ This project was developed in **September 2023**
 - **REST API & Database Integration**: A backend Node.js API records incoming sensor data in a MySQL database for historical tracking.
 - **Web-Based Dashboard**: A frontend interface allows users to view real-time and historical data in a graphical format.
 - **Data Visualization**: Users can analyze environmental trends using charts and tables.
-- **Modular & Scalable Architecture**: The project is structured into separate folders for the ESP32 firmware, API, database, and frontend, making it easy to manage and expand.
 
 ## Preview
 
