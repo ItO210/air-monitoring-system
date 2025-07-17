@@ -1,4 +1,4 @@
-# IoT Air Quality Monitoring System  
+#AireSano: An IoT Air Quality Monitoring System  
 
 This project is an IoT-based Air Quality Monitoring System that uses an ESP32 microcontroller to collect environmental data (temperature, humidity, and air quality) from sensors. The data is sent to a REST API, stored in a MySQL database, and visualized on a web-based dashboard.
 
